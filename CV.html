@@ -1,0 +1,471 @@
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #585c68;
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.resume .resume_left {
+  width: 280px;
+  background: #FFC0CB;
+}
+
+.resume .resume_left .resume_profile {
+
+
+width:218px;
+  height: 280px;
+}
+
+.resume .resume_left .resume_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+  color: #fff;
+}
+
+.resume .resume_left .regular {
+  color: #b1eaff;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+  color: #585858;
+  font-size: 12px;
+}
+
+.resume .resume_left .resume_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume_left .resume_social .semi-bold {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.resume .resume_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+}
+
+.resume .resume_right .bold {
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #FFC0CB;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 180px;
+  background: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #0bb5f1;
+  border-radius: 50%;
+  position: relative;
+  color: #0bb5f4;
+}
+
+
+
+
+
+</style>
+
+<div class="resume">
+   <div class="resume_left">
+     <div class="resume_profile">
+       <img style = "position:relative; left:30px;" src="https://i.imgur.com/f4L7Yjc.jpg" alt="profile_pic">
+     </div>
+     <div class="resume_content">
+       <div class="resume_item resume_info">
+         <div class="title">
+           <p class="bold">Thomas Johnson</p>
+           <p class="regular">Computer Science Graduate</p>
+         </div>
+         <ul>
+           <li>
+             <div class="icon">
+               <i class="fas fa-map-signs"></i>
+             </div>
+             <div class="data">
+               Hertfordshire <br /> United Kingdom
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fas fa-envelope"></i>
+             </div>
+             <div class="data">
+			 <a href = "mailto: thomasfillermail@gmail.com">Send Email</a>
+              
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fab fa-weebly"></i>
+             </div>
+             <div class="data">
+               <a href="https://www.soliditysnakes.co.uk">solditysnakes.co.uk</a> 
+             </div>
+           </li>
+         </ul>
+       </div>
+       <div class="resume_item resume_skills">
+         <div class="title">
+           <p class="bold">skill's</p>
+         </div>
+         <ul>
+           <li>
+             <div class="skill_name">
+               HTML
+             </div>
+             <div class="skill_progress">
+               <span style="width: 100%;"></span>
+             </div>
+             <div class="skill_per">100%</div>
+           </li>
+           <li>
+             <div style="font-size: 92%" class="skill_name">
+               CSS & common Libraries
+             </div>
+             <div class="skill_progress">
+               <span style="width: 80%;"></span>
+             </div>
+             <div class="skill_per">80%</div>
+           </li>
+           <li>
+             <div class="skill_name">
+               PHP
+             </div>
+             <div class="skill_progress">
+               <span style="width: 90%;"></span>
+             </div>
+             <div class="skill_per">90%</div>
+           </li>
+           <li>
+             <div class="skill_name">
+               JS
+             </div>
+             <div class="skill_progress">
+               <span style="width: 60%;"></span>
+             </div>
+             <div class="skill_per">60%</div>
+           </li>
+           <li>
+             <div class="skill_name">
+               JQUERY & React
+             </div>
+             <div class="skill_progress">
+               <span style="width: 88%;"></span>
+             </div>
+             <div class="skill_per">88%</div>
+           </li>
+		      <li>
+             <div class="skill_name">
+               C# & Java
+             </div>
+             <div class="skill_progress">
+               <span style="width: 81%;"></span>
+             </div>
+             <div class="skill_per">81%</div>
+           </li>
+		        <li>
+             <div class="skill_name">
+               C & C++
+             </div>
+             <div class="skill_progress">
+               <span style="width: 80%;"></span>
+             </div>
+             <div class="skill_per">80%</div>
+           </li>
+         </ul>
+       </div>
+       <div class="resume_item resume_social">
+         <div class="title">
+           <p class="bold">Social media and email</p>
+         </div>
+         <ul>
+           <li>
+             <div class="icon">
+               <i class="fab fa-github"></i>
+             </div>
+             <div class="data">
+               <p class="semi-bold">Github</p>
+               <p>github.com/ThomasSolidify</p>
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fab fa-linkedin"></i>
+             </div>
+             <div class="data">
+               <p class="semi-bold">Linkedin</p>
+               <p>Currently working on.</p>
+             </div>
+           </li>
+		       <li>
+             <div class="icon">
+               <i class="fas fa-envelope"></i>
+             </div>
+             <div class="data" font-color blue;>
+                <a href = "mailto: thomasfillermail@gmail.com">thomasfillermail@gmail.com</a>
+             </div>
+           </li>
+         </ul>
+       </div>
+     </div>
+  </div>
+  <div class="resume_right">
+    <div class="resume_item resume_about">
+        <div class="title">
+           <p class="bold">About Me</p>
+         </div>
+        <p>I have just finished my studies at the university of Keele as of the summer of 2022 and I am looking for work in 
+IT especially in software development.
+
+In my own time I have studied react, c# (in untiy) and solidity. I also spent a considerable amount of time in 
+ODE which is a physic simulation engine at first this was for my studies, but I have developed extremely 
+complex physics simulations which enable bipedal motion. I have also developed some working prototypes of 
+web 3 dapps using react and solidity JS.
+
+I am currently working with a quantum RNG to build a lottery system with verified randomness which are not using traditional random numbers or (psudedo random) numbers websites and systems typically use.</p>
+    </div>
+    <div class="resume_item resume_work">
+        <div class="title">
+           <p class="bold">Work Experience</p>
+         </div>
+        <ul>
+					 <li>
+              <div class="date">2015</div>
+              <div class="info">
+                     <p class="semi-bold">Rothamsted Research</p> 
+                  <p>I have extensive work experience outside of school. In year 10 of Secondary School I had the 
+opportunity to work with Dr. Mark Wilkinson on crop science research at the Rothamsted Research 
+Centre. I really enjoyed this experience and gained an insight into the collaborative nature of scientific 
+research.</p>
+                </div>
+            </li>
+			
+            <li>
+                <div class="date">2017 - 2018</div> 
+                <div class="info">
+                     <p class="semi-bold">Slug and Lettuce</p> 
+                  <p>I was a bartender at the slug and lettuce in harpden.</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">2019 - 2020</div>
+              <div class="info">
+                     <p class="semi-bold">Warehouse roles</p> 
+                  <p>I mostly worked in warehouses during my early years of university.</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">2020 - 2021</div>
+              <div class="info">
+                     <p class="semi-bold">Warehouse and data entry Dunelm</p> 
+                  <p>I worked initially during the first c19 lockdown as a warehouse operative. They then realised I was quite technical so I moved onto a data entry role which required me to input data into SQL and record people using equipment in a spreadsheet.</p>
+                </div>
+            </li>
+			
+					 <li>
+              <div class="date">2021-2022 (current)</div>
+              <div class="info">
+                     <p class="semi-bold">Database administrator Sainsburys & Bookers</p> 
+                  <p>I am currently managing databases for intake at a warehouse. This role requires a lot of hands on SQL administration and I am reliable for a lot of the operations at a warehouse. I am quite dedicated to this role and sometimes working 6 days a week. </p>
+                </div>
+            </li>
+			
+		
+        </ul>
+    </div>
+    <div class="resume_item resume_education">
+      <div class="title">
+           <p class="bold">Education</p>
+         </div>
+      <ul>
+            <li>
+                <div class="date">2010 - 2016</div> 
+                <div class="info">
+                     <p class="semi-bold">Sir John Laws</p> 
+                  <p>Completed GCES and Alevels.</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">2018 - 2022</div>
+              <div class="info">
+                     <p class="semi-bold">Keele University</p> 
+                  <p>Computer Science</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="resume_item resume_hobby">
+      <div class="title">
+           <p class="bold">Hobbies</p>
+         </div>
+		 <p>At the moment I like studying web development and game development. I have 
+		 working on my portfolio in react,solidity and unity over the summer.</p>
+       <ul>
+       <p><i class="fas fa-gamepad fa-spin" style="font-size:30px; position:relative; top:20px"></i></p>
+		  <p><i class="fas fa-mobile fa-spin" style="font-size:30px; position:relative; top:20px"></i></p>
+      </ul>
+    </div>
+  </div>
+</div>
